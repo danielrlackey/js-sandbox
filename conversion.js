@@ -1,11 +1,22 @@
-const firstName = "daniel";
-const lastName = "lackey";
+const name = "Daniel";
 const age = 30;
+const job = "web developer";
+const city = "St.Petersburg";
+let html;
 
-let val;
+const hello =() => {
+    return "wassup";
+}
 
-val = firstName + " " + lastName;
+html = `
+    <ul>
+        <li> name: ${name} </li>
+        <li> age: ${age} </li>
+        <li> job: ${job} </li>
+        <li> city: ${city}</li>
+        <li>${hello()}</li>
+        <li>${age > 29 ? "youre old" : "youre young"}</li>
+    </ul>
+`
 
-val = "hello my name is " + firstName + " and I am " + age;
-
-console.log(val);
+document.body.innerHTML = html;
