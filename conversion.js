@@ -1,22 +1,31 @@
-const name = "Daniel";
-const age = 30;
-const job = "web developer";
-const city = "St.Petersburg";
-let html;
+const numbers = [43, 56, 33, 23, 44, 36, 5];
+const numbers2 = new Array(22,45,33,76,54)
+const fruit = ["apple", "banna", "orange", "pear"];
+const mixed = [22, "hello", true, undefined, null, {a:1, b:1}, new Date()];
 
-const hello =() => {
-    return "wassup";
-}
+let val;
 
-html = `
-    <ul>
-        <li> name: ${name} </li>
-        <li> age: ${age} </li>
-        <li> job: ${job} </li>
-        <li> city: ${city}</li>
-        <li>${hello()}</li>
-        <li>${age > 29 ? "youre old" : "youre young"}</li>
-    </ul>
-`
+val = Array.isArray(numbers);
+val = numbers[3];
+val = numbers[0];
+val = numbers.push(44)
+val = numbers.indexOf(36);
+val = numbers.unshift(120);
+val = numbers.pop();
+numbers.shift();
+val = numbers.splice(1,1);
+numbers.reverse();
 
-document.body.innerHTML = html;
+val = numbers.concat(numbers2);
+val = fruit.sort();
+val = numbers.sort();
+
+val = numbers.sort((x,y) => {return x - y});
+
+const under50 = (num) => {
+    return num < 20;
+};
+val = numbers.find(under50);
+
+console.log(numbers);
+console.log(val);
