@@ -1,36 +1,41 @@
-const id = 100
+const color = "green";
 
-// if(id >= 100) {
-//     console.log("correct")
-// } else{
-//     console.log("wrong!")
-// }
-
-// const color = "yellow";
-
-// if( color === "red") {
-//     console.log("color is red")
-// } else if(color === "blue"){
-//     console.log("color is blue")
-// } else {
-//     console.log("color is not red or blue")
-// }
-
-const name = "steve";
-const age = 20;
-
-if(age > 0 && age < 12){
-    console.log(`${name} is a child`);
-} else if(age >= 13 && age <= 19){
-    console.log(`${name} is a teenager`);
-} else {
-    console.log(`${name} is an adult`)
+switch(color){
+    case 'red':
+        console.log("color is red");
+        break;
+    case 'blue':
+        console.log("color is blue");
+        break;
+    default:
+        console.log("color is neither red or blue");
 }
 
-if(age > 65 || age < 13){
-    console.log(`${name} connot run in the race`)
-}else{
-    console.log(`${name} can run in the race!`)
+let day;
+
+switch(new Date().getDay()){
+    case 0:
+        day = "sunday";
+        break;
+    case 1:
+        day = "monday";
+        break;
+    case 2:
+        day = "tuesday";
+        break;
+    case 3:
+        day = "wednesday";
+        break;
+    case 4:
+        day = "thursday";
+        break;
+    case 5:
+        day = "friday";
+        break;
+    case 6:
+        day = "saturday";
+        break;
+    
 }
 
-console.log(id === 100 ? "correct" : "incorrect");
+console.log(`today is ${day}`)
