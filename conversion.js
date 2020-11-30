@@ -1,20 +1,36 @@
-person = {
-    firstName: "steve",
-    lastName: "everson",
-    age: 45,
-    email: "steveEverson@gmail.com",
-    hobbys: ["music", "food", "t.v"],
-    adress: {
-        city: "lincoln",
-        state: "nebraska",
-        street: "13th ave n",
-        aptNumber: "7546"
-    },
-    height: "6ft 2in"
+const id = 100
+
+// if(id >= 100) {
+//     console.log("correct")
+// } else{
+//     console.log("wrong!")
+// }
+
+// const color = "yellow";
+
+// if( color === "red") {
+//     console.log("color is red")
+// } else if(color === "blue"){
+//     console.log("color is blue")
+// } else {
+//     console.log("color is not red or blue")
+// }
+
+const name = "steve";
+const age = 20;
+
+if(age > 0 && age < 12){
+    console.log(`${name} is a child`);
+} else if(age >= 13 && age <= 19){
+    console.log(`${name} is a teenager`);
+} else {
+    console.log(`${name} is an adult`)
 }
 
-let val;
+if(age > 65 || age < 13){
+    console.log(`${name} connot run in the race`)
+}else{
+    console.log(`${name} can run in the race!`)
+}
 
-val = person.firstName;
-
-console.log(val)
+console.log(id === 100 ? "correct" : "incorrect");
