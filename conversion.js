@@ -1,41 +1,41 @@
-const color = "green";
+// const cars = ["ford", "chevy", "honda", "toyota"];
 
-switch(color){
-    case 'red':
-        console.log("color is red");
-        break;
-    case 'blue':
-        console.log("color is blue");
-        break;
-    default:
-        console.log("color is neither red or blue");
+
+// cars.forEach((car, index, array) => {
+//     console.log((`${index} ${car}`))
+//     console.log(array);
+// })
+
+// for(let i = 0; i < cars.length; i++){
+//     console.log(cars[i])
+// }
+
+// cars.forEach((car) => {
+//     console.log(car)
+// })
+
+// cars.map((car) => {
+//     console.log(car)
+// })
+
+// const users = [
+//     {id: 1, name: "john"},
+//     {id: 2, name: "sarah"},
+//     {id:3, name: "karen"}
+// ];
+
+// const ids = users.map((user) => {
+//     return user.id;
+// });
+
+// console.log(ids);
+
+const user = {
+    firstName: "daniel",
+    age: 30,
+    height: 5.7
 }
 
-let day;
-
-switch(new Date().getDay()){
-    case 0:
-        day = "sunday";
-        break;
-    case 1:
-        day = "monday";
-        break;
-    case 2:
-        day = "tuesday";
-        break;
-    case 3:
-        day = "wednesday";
-        break;
-    case 4:
-        day = "thursday";
-        break;
-    case 5:
-        day = "friday";
-        break;
-    case 6:
-        day = "saturday";
-        break;
-    
+for(let x in user){
+    console.log(`${x} : ${user[x]}`);
 }
-
-console.log(`today is ${day}`)
