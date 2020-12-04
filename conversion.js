@@ -1,41 +1,18 @@
-// const cars = ["ford", "chevy", "honda", "toyota"];
+var a = 1;
+let b = 2;
+const c = 3;
 
-
-// cars.forEach((car, index, array) => {
-//     console.log((`${index} ${car}`))
-//     console.log(array);
-// })
-
-// for(let i = 0; i < cars.length; i++){
-//     console.log(cars[i])
+// const test = () => {
+//     var a = 4;
+//     let b = 5;
+//     const c = 6;
+//     console.log("test scope", a, b, c);
 // }
 
-// cars.forEach((car) => {
-//     console.log(car)
-// })
+// test();
 
-// cars.map((car) => {
-//     console.log(car)
-// })
-
-// const users = [
-//     {id: 1, name: "john"},
-//     {id: 2, name: "sarah"},
-//     {id:3, name: "karen"}
-// ];
-
-// const ids = users.map((user) => {
-//     return user.id;
-// });
-
-// console.log(ids);
-
-const user = {
-    firstName: "daniel",
-    age: 30,
-    height: 5.7
+if(true){
+    console.log("if scope", a, b, c)
 }
 
-for(let x in user){
-    console.log(`${x} : ${user[x]}`);
-}
+console.log("global scope", a, b, c);
